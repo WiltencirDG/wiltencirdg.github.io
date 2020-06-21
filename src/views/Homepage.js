@@ -9,15 +9,14 @@ export default function Homepage() {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
-      <div className={classes.title}>
-        <h1>
-          THIS IS
-          <br />
-          SCHELAS®
-        </h1>
+    <div className={classes.backdrop}>
+      <div className={classes.container}>
+        <div className={classes.title}>
+          <h2>THIS IS</h2>
+          <h1 className={classes.schelas}>SCHELAS®</h1>
+        </div>
+        <Home />
       </div>
-      <Home />
     </div>
   );
 }

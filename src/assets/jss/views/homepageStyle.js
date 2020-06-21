@@ -1,18 +1,28 @@
 import base from "../../base.js";
+import backdrop from "../../img/backdrop.jpg";
 
 const homepageStyle = {
+  backdrop: {
+    backgroundImage: "url(" + backdrop + ")",
+    backgroundRepeat: "repeat-y",
+  },
   container: {
     overflow: "hidden",
-    background:
-      "linear-gradient(180deg, " + base.primaryColor + ", transparent 100%)",
-    backgroundColor: base.primaryColorDark,
   },
   title: {
-    justifyContent: "center",
+    width: "80vw",
+    marginRight: "10vw",
+    marginLeft: "10vw",
+    marginTop: "5vw",
     textAlign: "center",
-    marginTop: "5rem",
-    marginBottom: "0",
+    paddingTop: "15px",
+    paddingBottom: "15px",
     color: "white",
+    backgroundColor: "rgba(0, 0, 0,0.3)",
+  },
+  schelas: {
+    color: base.titleColor,
+    fontSize: "32pt",
   },
 };
 

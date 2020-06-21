@@ -11,7 +11,8 @@ const homeStyle = {
     flexGrow: "1",
   },
   tabs: {
-    color: base.primaryColor,
+    color: base.titleColor,
+    backgroundColor: base.backgroundColor2,
     Tab: {
       background: "red",
     },
@@ -28,8 +29,10 @@ const homeStyle = {
     fontSize: "24pt",
     fontWeight: "bold",
     textAlign: "center",
+    color: base.titleColor,
   },
   subTitle: {
+    color: base.titleColor,
     fontFamily: "'Helvetica' 'sans-serif'",
     fontSize: "16pt",
     fontWeight: "600",

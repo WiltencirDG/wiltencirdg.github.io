@@ -16,7 +16,7 @@ const useStyles = makeStyles(homeStyle);
 export default function Home() {
   const classes = useStyles();
 
-  const [tab, setTab] = React.useState(2);
+  const [tab, setTab] = React.useState(0);
   const handleTabs = (event, newValue) => {
     setTab(newValue);
   };
@@ -25,10 +25,10 @@ export default function Home() {
     <div className={classes.container}>
       <AppBar position="static" color="inherit">
         <Tabs
+          className={classes.tabs}
           classes={{
             indicator: classes.tabIndicator,
           }}
-          className={classes.tabs}
           value={tab}
           onChange={handleTabs}
           indicatorColor="inherit"
@@ -134,18 +134,27 @@ export default function Home() {
           <div className={classes.content}>
             <p className={classes.title}>Technologies</p>
             <div className={classes.dev}>
-              <p className={classes.devName}>Android</p>
-              <p className={classes.devName}>Google Maps API</p>
-              <p className={classes.devName}>MySQL</p>
+              <p className={classes.devName}>
+                Android
+                <br />
+                Google Maps API
+                <br />
+                MySQL
+              </p>
             </div>
           </div>
           <p className={classes.title}>Developers</p>
           <div className={classes.crewContent}>
             <div className={classes.dev}>
-              <p className={classes.devName}>Wiltencir Garcia</p>
-              <p className={classes.devName}>Bruno Teixeira dos Santos</p>
-              <p className={classes.devName}>André Bortollotti</p>
-              <p className={classes.devName}>Paulo Sérgio Andriguetto Filho</p>
+              <p className={classes.devName}>
+                Wiltencir Garcia
+                <br />
+                Bruno Teixeira dos Santos
+                <br />
+                André Bortollotti
+                <br />
+                Paulo Sérgio Andriguetto
+              </p>
             </div>
           </div>
         </div>
