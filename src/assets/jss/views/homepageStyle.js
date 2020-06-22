@@ -8,6 +8,7 @@ const homepageStyle = {
   },
   container: {
     overflow: "hidden",
+    minHeight: "150vh",
   },
   title: {
     width: "80vw",

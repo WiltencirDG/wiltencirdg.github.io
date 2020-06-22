@@ -89,19 +89,19 @@ export default function Home() {
       <TabPanel value={tab} index={1} className={classes.project}>
         <div>
           <p className={classes.title}>
-            SchelasVANS{"  "}
-            <a
+            SchelasVans{"  "}
+            {/* <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://github.com/WiltencirDG/SchelasVansAPP"
             >
               <GitHub />
-            </a>
+            </a> */}
           </p>
           <div className={classes.content}>
             <p>Simply the best project of them all.</p>
             <p>
-              Born on the need for control of transportation vans, SchelasVANS
+              Born on the need for control of transportation vans, SchelasVans
               came as a helper for these owners.
             </p>
             <p>
@@ -113,7 +113,7 @@ export default function Home() {
             <p className={classes.title}>Project</p>
             <img
               className={classes.banner}
-              alt="SchelasVANS banner"
+              alt="SchelasVans banner"
               src={schelasVans}
             />
             <p>You can control everything on your business:</p>
@@ -122,7 +122,7 @@ export default function Home() {
               Everyone that you transport is in here. Do not worry about writing
               on paper.
             </p>
-            <p className={classes.subTitle}>Driver</p>
+            <p className={classes.subTitle}>Drivers</p>
             <p>Keep control of who drives your vans.</p>
             <p className={classes.subTitle}>Pickup and Dropout places</p>
             <p>Always know where to go.</p>
