@@ -37,10 +37,7 @@ export default function Home() {
         >
           <Tab label="About" />
           <Tab label="Vans" />
-          <Tab label="Financial" />
-          <Tab label="Trade" />
-          <Tab label="Trader" />
-          <Tab label="CEI" />
+          <Tab label="More..." />
         </Tabs>
       </AppBar>
 
@@ -81,7 +78,7 @@ export default function Home() {
             <p>in the group's name, I continued to develop over the years.</p>
             <p>And these projects are displayed here.</p>
             <p>Schelas and the friendship will be forever deep in my heart.</p>
-            <p>GO SCHELAS!</p>
+            <p>Schelas everywhere!</p>
           </div>
         </div>
       </TabPanel>
@@ -162,23 +159,20 @@ export default function Home() {
 
       <TabPanel value={tab} index={2} className={classes.project}>
         <div>
-          <p className={classes.title}>SchelasFinancial</p>
+          <p className={classes.title}>More details soon...</p>
         </div>
-      </TabPanel>
+        <div className={classes.content}>
+          <p className={classes.subTitle}>SchelasSpotify</p>
+          <p>A helper service that generate and manage your Spotify Playlists based on various types of criteria</p>
+          <p className={classes.subTitle}>SchelasEditor</p>
+          <p>A robot that cuts your Youtube videos automatically and prepare to render with AfterEffects®</p>
+          <p className={classes.subTitle}>SchelasWABot</p>
+          <p>A WhatsApp bot developed to respond automatically your messages of customer service</p>
+          <p className={classes.subTitle}>SchelasTrader</p>
+          <p>A robot that trades stocks on Stock Exchanges or FOREX with MetaTrader4 and MetaTrader5</p>
+          <p className={classes.subTitle}>SchelasCEI_Importer</p>
+          <p>A service that handles integration with B3 [Brasil, Bolsa, Balcão] and returns your current stocks and positions</p>
 
-      <TabPanel value={tab} index={3} className={classes.project}>
-        <div>
-          <p className={classes.title}>SchelasTrade</p>
-        </div>
-      </TabPanel>
-      <TabPanel value={tab} index={4} className={classes.project}>
-        <div>
-          <p className={classes.title}>SchelasTrader</p>
-        </div>
-      </TabPanel>
-      <TabPanel value={tab} index={5} className={classes.project}>
-        <div>
-          <p className={classes.title}>SchelasCEI</p>
         </div>
       </TabPanel>
     </div>
